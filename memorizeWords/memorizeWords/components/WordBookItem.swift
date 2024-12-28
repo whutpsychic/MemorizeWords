@@ -33,15 +33,16 @@ struct WordBookItem: View {
                 // 副标题（描述）
                 Text(description!).background(.orange)
                 
-
             }
             .background(.pink)
             
-            
-            
-   
         }
         .padding(.horizontal, 15)
+        .padding(.vertical, 10)
+        .contentShape(Rectangle())
+        .onTapGesture {
+            print("tapped")
+        }
     }
 }
 
